@@ -1,0 +1,104 @@
+:root{
+  --background-clr: hsl(225, 100%, 94%);
+  --main-blue:  hsl(245, 75%, 52%);
+  --paragraph-clr: hsl(224, 23%, 55%);
+  --container-clr: hsl(225, 100%, 98%);
+  --heading-clr: hsl(223, 47%, 23%);
+
+  --font-family: "Red Hat Display";
+  --heading-font-size: 2.4rem;
+  --paragraph-font-size: 1.6rem;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: var(--font-family);
+  font-size: var(--paragraph-font-size);
+  background-color: var(--background-clr);
+  color: var(--paragraph-clr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 10vw;
+}
+main .container{
+  background-color: var(--container-clr);
+  width: 330px;
+  border-radius: 16px;
+  /* padding: 20px; */
+  margin-bottom: 16px;
+}
+main .container .img-container{
+  position: relative;
+  margin-bottom: 14px;
+}
+main .container .img-container img{
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+main .container .body-container h1{
+  color: var(--heading-clr);
+  font-size: var(--heading-font-size);
+  font-weight: 900;
+  text-align: center;
+  padding:20px;
+}
+main .container .body-container p{
+  text-align: center;
+  padding: 0 20px 0 20px;
+  line-height: 1.5;
+}
+main .container .pricing-container{
+  background-color: hsl(225, 100%, 94%, 50%);
+  margin: 20px;
+  width: auto;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.blue{
+  color: var(--heading-clr);
+  font-weight: 900;
+}
+
+main .container .pricing-container .pricing a{
+  color: var(--main-blue);
+  font-weight: 700;
+}
+main .container .pricing-container .pricing a:hover{
+  color:  hsl(245, 75%, 52%, 70%);
+  text-decoration: none;
+  font-weight: 700;
+}
+.payment-btn button{
+  background-color: var(--main-blue);
+  border: none;
+  border-radius: 10px;
+  font-family: var(--font-family);
+  font-weight: 900;
+  color: var(--container-clr);
+  padding: 16px;
+  width:280px;
+  position: relative;
+  left: 25px;
+  margin-bottom: 20px;
+}
+.payment-btn button:hover{
+  background-color: hsl(245, 75%, 52%, 70%);
+}
+.payment-btn p{
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+.payment-btn p:hover{
+  color: var(--heading-clr);
+}
